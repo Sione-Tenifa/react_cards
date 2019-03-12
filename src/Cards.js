@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.css'
-import {  Table, } from "semantic-ui-react";
-import Card from './Card'
+import {  Table, Card } from "semantic-ui-react";
+import Flash from './Flash'
+
+
 const Cards = ({ cards }) => (
+  
+ 
   <Table celled padded>
     <Table.Header>
       <Table.Row>
@@ -14,11 +18,12 @@ const Cards = ({ cards }) => (
     <Table.Body>
       {
          cards.map( card => ( 
-         <Card key={card.id} {...card} />
+         <Flash key={card.id} {...card} />
          ))
       }
     </Table.Body>
   </Table>
+  
 );
 
 export default Cards;

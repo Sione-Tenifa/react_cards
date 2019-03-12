@@ -3,7 +3,7 @@ import { Button, Table, } from "semantic-ui-react";
 
 
 
-const Card = ({ name, description }) => (
+const Flash = ({ name, description }) => (
   <Table.Row>
     <Table.Cell>{name}</Table.Cell>
     {/* <Table.Cell>{description}</Table.Cell> */}
@@ -15,4 +15,4 @@ const Card = ({ name, description }) => (
   </Table.Row> 
 );
 
-export default Card;
+export default Flash;
